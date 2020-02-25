@@ -36,5 +36,5 @@ Go to http://localhost:1234 to view
 ## Output Screenshot
 
 **Image showing bounding box selected by user for cat **
-![Alt text](https://drive.google.com/uc?export=view&id=1RiA5tCmteEa20tnfiM_MpR_GBzrvPHti/view?usp=sharing)
+![Alt text](https://drive.google.com/uc?export=view&id=1RiA5tCmteEa20tnfiM_MpR_GBzrvPHti)
 
