@@ -1,40 +1,62 @@
-## Browser based Object-Detection
-### Coding Challenge GSOC-2020 - Cancer Region of Interest Extraction and Machine Learning
-> This repo contains coding challenge for GSOC-2020 by caMicroscope.
+# Object Detection (COCO-SSD) Demo
 
-![](header.png)
+This demo allows you to try out object detection on a couple of preset images using different base models.
 
-## Code challenge
-Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
+## Setup
 
-## Approach
-For this challenge I have built a browser based model with **Tensorflow.js** which allows the user to select the model and also the class. Tensorflow.js allows us to use machine learning directly in the browser as well as on the backend servers like Node.js. 
-
-Tensorflow.js also provides pre-trained models to integrate with the web-app. The models are hosted on NPM and unpkg so they can be used in any project out of the box. They can be used directly or used in a transfer learning setting with TensorFlow.js. I have used **COCO-SSD**  model which detects objects defined in the COCO dataset.
-
-
-## Installation
-
-To set-up Tensorflow.js we can either use **script** tags or **NPM** with build tools like Parcel, WebPack, or Rollup. I have used npm with parcel to build js file
-
-Steps:
+`cd` into the demo/ folder:
 
 ```sh
-npm install parcel-bundler
+cd coco-ssd/demo
 ```
 
+Install dependencies:
+
 ```sh
-git clone https://github.com/divyaprabha123/caMicroscopeGSOC/
+yarn
 ```
+
+Launch a development server, and watch files for changes. This command will also automatically open
+the demo app in your browser.
+
+```sh
+yarn watch
+```
+
+## If you are developing the model locally and want to test the changes in the demo
+
+`cd` into the coco-ssd/ folder:
+
+```sh
+cd coco-ssd
+```
+
+Install dependencies:
+```sh
+yarn
+```
+
+Publish coco-ssd locally:
+```sh
+yarn publish-local
+```
+
+`cd` into this directory (coco-ssd/demo) and install dependencies:
 
 ```sh
 cd demo
-parcel index.html
+yarn
 ```
 
-Go to http://localhost:1234 to view
-## Output Screenshot
+Link the package published from the publish step above:
+```sh
+yarn link-local
+```
 
-**Image showing bounding box selected by user for cat **
-![Alt text](https://drive.google.com/uc?export=view&id=1RiA5tCmteEa20tnfiM_MpR_GBzrvPHti)
+Start the dev demo server:
+```sh
+yarn watch
+```
 
+To get future updates from the `coco-ssd` source code, just run `yarn publish-local` in the coco-ssd/
+folder again.
