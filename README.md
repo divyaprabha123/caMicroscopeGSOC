@@ -2,7 +2,7 @@
 ### Coding Challenge GSOC-2020 - Cancer Region of Interest Extraction and Machine Learning
 > This repo contains coding challenge for GSOC-2020 by caMicroscope.
 
-![](header.png)
+
 
 ## Code challenge
 Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
@@ -28,13 +28,19 @@ git clone https://github.com/divyaprabha123/caMicroscopeGSOC/
 ```
 
 ```sh
-cd demo
+cd caMicroscopeGSOC
 parcel index.html
 ```
 
 Go to http://localhost:1234 to view
 ## Output Screenshot
 
-**Image showing bounding box selected by user for cat **
+### Image showing bounding box selected by user for cat 
 ![Alt text](https://drive.google.com/uc?export=view&id=1RiA5tCmteEa20tnfiM_MpR_GBzrvPHti)
 
+
+### Image showing bounding box selected by user for Dog
+![](https://github.com/divyaprabha123/caMicroscopeGSOC/blob/master/output/Dog-bb.PNG)
+
+### Image showing bounding box selected by user for Person
+![](https://github.com/divyaprabha123/caMicroscopeGSOC/blob/master/output/person-bb.PNG)
